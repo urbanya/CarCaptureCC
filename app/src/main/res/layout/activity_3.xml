@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity3">
+
+    <TextView
+        android:id="@+id/AvgVTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginBottom="15dp"
+        android:text="Durchschnitts Geschwindigkeit"
+        app:layout_constraintBottom_toTopOf="@+id/AvgVTextViewAnzeige"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/AvgVTextViewAnzeige"
+        android:layout_width="201dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="143dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/AvgRPMTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AvgVTextView" />
+
+    <TextView
+        android:id="@+id/AvgRPMTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="222dp"
+        android:layout_marginBottom="15dp"
+        android:text="Durchschnitts RPM"
+        app:layout_constraintBottom_toTopOf="@+id/FMinAnzeige"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AvgVTextViewAnzeige" />
+
+    <TextView
+        android:id="@+id/AvgRPMTextViewAnzeige"
+        android:layout_width="203dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="141dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AvgRPMTextView" />
+
+    <TextView
+        android:id="@+id/FMinTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="222dp"
+        android:layout_marginBottom="6dp"
+        android:text="Fahrdauer in Minuten"
+        app:layout_constraintBottom_toTopOf="@+id/FMinAnzeige"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AvgRPMTextViewAnzeige" />
+
+    <TextView
+        android:id="@+id/FMinAnzeige"
+        android:layout_width="203dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="141dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AvgRPMTextView" />
+
+    <Button
+        android:id="@+id/UploadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="246dp"
+        android:layout_marginBottom="350dp"
+        android:text="Upload"
+        android:textColor="#41BE47"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/DeleteButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FMinAnzeige" />
+
+    <Button
+        android:id="@+id/DeleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="246dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="350dp"
+        android:text="Delete"
+        android:textColor="#FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/UploadButton"
+        app:layout_constraintTop_toBottomOf="@+id/FMinAnzeige" />
+
+    <Button
+        android:id="@+id/RestartButton"
+        android:layout_width="266dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="#7ECACACA"
+        android:text="Restart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UploadButton" />
+
+    <Button
+        android:id="@+id/DiscButton"
+        android:layout_width="266dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="#7ECACACA"
+        android:text="Disconnect"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UploadButton" />
+
+</android.support.constraint.ConstraintLayout>
